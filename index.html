@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Telemovies</title>
+</head>
+<body>
+    <header>
+        <h1>Telemovies</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="filmes-link">Filmes</a></li>
+                <li><a href="#" id="series-link">Séries</a></li>
+                <li><a href="#" id="minha-lista-link">Minha Lista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h2>Filme em Destaque</h2>
+        </section>
+        <section id="filmes" class="filmes">
+            <h2>Filmes</h2>
+            <div class="container">
+                <div class="filme" data-index="0">Harry Potter e a Pedra Filosofal</div>
+                <div class="filme" data-index="1">Harry Potter e a Câmara Secreta</div>
+                <div class="filme" data-index="2">Harry Potter e o Prisioneiro de Azkaban</div>
+                <div class="filme" data-index="3">Harry Potter e o Cálice de Fogo</div>
+                <div class="filme" data-index="4">Harry Potter e a Ordem da Fênix</div>
+            </div>
+        </section>
+        <section id="series" class="filmes" style="display: none;">
+            <h2>Séries</h2>
+            <div class="container">
+                <div class="serie" data-index="0">Stranger Things</div>
+                <div class="serie" data-index="1">Game of Thrones</div>
+                <div class="serie" data-index="2">Breaking Bad</div>
+                <div class="serie" data-index="3">The Mandalorian</div>
+            </div>
+        </section>
+        <section id="minha-lista" class="filmes" style="display: none;">
+            <h2>Minha Lista</h2>
+            <div class="container" id="lista-container">
+                <p>Nada adicionado ainda.</p>
+            </div>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+            <button id="adicionar-lista">Adicionar à Minha Lista</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Telemovies. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
